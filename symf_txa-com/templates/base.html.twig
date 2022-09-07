@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="{{ app.request.locale }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <title>Jérôme Picard</title>
+
+    {% block stylesheets %}
+
+      {{ encore_entry_link_tags('app') }}
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href='http://fonts.googleapis.com/css?family=Cabin:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+      <link rel="stylesheet" href="{{ asset('build/css/bootstrap.css') }}">
+      <link rel="stylesheet" href="{{ asset('build/css/animate.css') }}">
+      <link rel="stylesheet" href="{{ asset('build/css/prettyPhoto.css') }}">
+      <link rel="stylesheet" href="{{ asset('build/css/pe-icons.css') }}">
+      <link rel="stylesheet" href="{{ asset('build/css/style.css') }}">
+      <link rel="stylesheet" href="{{ asset('build/css/font-awesome.min.css') }}">
+
+    {% endblock %}
+
+    
+
+  </head>
+  <body>
+
+    <div id="preloader"></div>
+
+    <div id="search-wrapper">
+      <div class="container">
+        <input id="search-box" placeholder="Search">
+        <span class="close-trigger">
+          <i class="fa fa-angle-up"></i>
+        </span>
+      </div>
+    </div>
+
+    <!-- END NAV -->
+    <nav class="menu" id="theMenu">
+      <div class="menu-wrap">
+        <i class="fa fa-bars menu-close"></i>
+        <div id="menu-logo">
+          <h2>
+            <span class="pe-7s-chat logo-icon"></span>
+            Menu</h2>
+        </div>
+
+        <ul id="main-menu">
+          <li>
+            <a href="#headerwrap">Home    
+              <i class="fa fa-home menu-icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#about">A propos de moi  
+              <i class="fa fa-question-circle menu-icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#services">Mes compétences
+              <i class="fa fa-gears menu-icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio 
+              <i class="fa fa-camera menu-icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#testimonials">Veille technologique
+              <i class="fa fa-file-text-o menu-icon"></i>
+            </a>
+          </li>
+          <!--<li><a href="#pricing">Pricing <i class="fa fa-money menu-icon"></i></a></li>-->
+          <li>
+            <a href="#contact-us">Contact  
+              <i class="fa fa-envelope menu-icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="search-trigger">Search
+              <i class="fa fa-search menu-icon"></i>
+            </a>
+          </li>
+        </ul>
+
+        <ul id="social-icons">
+          <li class="facebook">
+            <a href="#" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="#" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="dribbble">
+            <a href="#" target="_blank">
+              <i class="fa fa-dribbble"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- END NAV -->
+
+    <!-- MAIN IMAGE SECTION -->
+    <div id="headerwrap">
+      <div class="container">
+        <div class="row">
+          <div id="bannertext" class="col-lg-offset-2">
+            <h1 class="fade-down gap">
+              <span class="fa fa-globe"></span>
+              Jérôme Picard</h1>
+            <h2 class="fade-up">Un nouveau venu dans le développement web ...</h2>
+            <div class="spacer"></div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- /container -->
+      <span class="headerwrap-btn-wrap">
+        <a href="#content-wrapper" class="headerwrap-btn">
+          <i class="fade-up fa fa-angle-down"></i>
+        </a>
+      </span>
+    </div>
+    <!-- /headerwrap -->
+
+    <div id="content-wrapper">
+      <section id="about" class="section-wrapper">
+        <div class="container">
+          <div class="centered gap fade-down section-heading">
+            <h2 class="main-title">Qui suis-je ?</h2>
+            <hr>
+            
+              <span class="stat-icon">
+                <a class="pe-7s-note bounce-in no-display animated bounceIn appear" href="build/img/demo/CV_Jerome_Picard.pdf" target="_blank"></a></span>
+              <h4>
+                <a class="countup" href="build/img/demo/CV_Jerome_Picard.pdf" target="_blank">Mon CV </a></h4>
+                
+            
+          </div><!--<p>Un jeune développeur web en cours de formation </p>-->
+          
+
+          
+
+          <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-1 centered bounce-in"></div>
+            <div class="col-md-5 col-md-5 col-md-3 fade-up">
+              <!--col-md-8 col-md-offset-2 gap-->
+              <div class="testimonial">
+
+                <div class="media centered fade-down">
+                  <a class="animated rotateIn">
+                    <img src="build/img/demo/logistique.png" width="" class="" alt="Avatar"/>
+                  </a>
+                  <div class="media-body bounce-in">
+                    <h3>C-Log / Païkan St Malo</h3>
+                    <a href="#">2004-2011</a>
+                  </em>
+                </div>
+              </div>
+            </br>
+            <div class="bubble bounce-in">
+              Service réception, ADV, contrôle qualité Gestion de stocks.
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-1 col-md-1 col-sm-1 centered bounce-in"></div>
+        <div class="col-lg-5 col-md-5 col-sm-3 fade-up">
+          <div class="testimonial">
+
+            <div class="media centered fade-down">
+              <a class="animated rotateIn">
+                <img src="build/img/demo/hybrid.jpg" width="" class="" alt="Avatar"/>
+              </a>
+              <div class="media-body bounce-in">
+                <h3>Garage des Landes Fleuries Quévert</h3>
+                <a href="#">2011-2020</a>
+              </em>
+            </div>
+          </div>
+        </br>
+        <div class="bubble bounce-in">
+          Electricien auto / habilitation véhicules électriques B0V-BCL-B2VL / réceptionnaire / remplacement du chef d’entreprise.
+        </div>
+
+      </div>
+    </div>
+    <div class="col-md-7 col-md-12">
+      <div class="centered bounce-in">
+        <span class="stat-icon">
+          <span class="pe-7s-light bounce-in no-display animated bounceIn appear"></span></span>
+        <h4>
+          <span class="countup">Remise en question avec la réalisation d'un bilan de compétences début 2020</span></h4>
+      </div>
+    </div>
+  </div>
+</br>
+</br>
+
+<div class="row gap">
+<div class="col-md-6 col-md-offset-2">
+  <img src="build/img/screens.png" class="fade-up img-responsive" alt="Alt"/>
+</div>
+</div>
+
+<div class="row gap">
+<div class="col-md-8 fade-up">
+
+  <p align="justify">Actuellement étudiant en BTS Services Informatiques aux Organisations spécialité SLAM (Applications métiers) au GRETA à Saint Malo où l'aspiration pour les outils numériques se confirme et me pousse à continuer dans cette voie. Ayant pour but d’améliorer mes compétences, le Bac +4 est la poursuite d’études idéale pour travailler sur des projets intéressants et complexes. J’ai encore beaucoup de chose à apprendre et votre entreprise me parait être la plus adaptée pour devenir un bon développeur.</p>
+  <p align="justify">
+    <!--Doté d'un bon sens relationnel, d'une forte capacité à fédérer et accompagner dans la conduite du changement, je suis également autonome et rigoureux pour travailler à distance tout en restant en contact avec les chefs de projet et chargés d’appui.-->
+    L’analyse, l’interprétation des données ainsi que l’aspect organisationnel m’ont aidé à me définir professionnellement. Toujours soucieux de bien faire, je suis quelqu’un qui travaille beaucoup, mes résultats et appréciations vont dans ce sens. Je pense également avoir de bonnes bases pour augmenter mon niveau jusqu’à l’obtention du diplôme visé.
+  </p>
+</div>
+<div class="col-md-4">
+  <div class="qa-message-list" id="wallmessages">
+    <div class="message-item fade-up" id="m16">
+      <div class="message-inner">
+        <div class="message-head clearfix">
+          <div class="user-detail">
+            <h5 class="handle">Société Tekxia St Malo</h5>
+            <div class="post-meta">
+              <div class="asker-meta">
+                <span class="qa-message-what"></span>
+                <span class="qa-message-when">
+                  <span class="qa-message-when-data">février 2021</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="qa-message-content">
+          Développement web du site d’exploitation, mise à jour des sites commerciaux
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="message-item fade-up" id="m9"> <div class="message-inner"> <div class="message-head clearfix"> <div class="user-detail"> <h5 class="handle">Garage des Landes Fleuries Quévert</h5> <div class="post-meta"> <div class="asker-meta"> <span class="qa-message-what"></span> <span class="qa-message-when"> <span class="qa-message-when-data">2011-2020</span> </span> </div> </div> </div> </div> <div class="qa-message-content"> Electricien auto / habilitation véhicules électriques B0V-BCL-B2VL / réceptionnaire / remplacement du chef d’entreprise </div> </div> </div>-->
+
+    <!--<div class="message-item fade-up" id="m7"> <div class="message-inner"> <div class="message-head clearfix"> <div class="user-detail"> <h5 class="handle">C-Log / Païkan St Malo</h5> <div class="post-meta"> <div class="asker-meta"> <span class="qa-message-what"></span> <span class="qa-message-when"> <span class="qa-message-when-data">2004-2011</span> </span> </div> </div> </div> </div> <div class="qa-message-content"> Service réception, ADV, contrôle qualité Gestion de stocks </div> </div> </div>-->
+
+  </div>
+</div>
+</div>
+</div>
+ <section id="services" class="divider-wrapper">
+          <div class="container">
+            <div class="centered gap fade-down section-heading">
+              <h2 class="main-title">Mes compétences</h2>
+              <hr>
+              <p>Pendant ma formation, j'ai pu acquérir quelques compétences...</p>
+            </div>
+            <div class="row">
+              <div class="col-lg-1 col-md-1 col-sm-1 centered bounce-in">
+                <i class="pe-7s-tools"></i>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 fade-up">
+                <h3>HTML / CSS</h3>
+                <p align="justify">La base de la création d'un site internet passe par l'apprentissage du language de balisages HTML & CSS.
+                </p>
+              </div>
+
+              <div class="col-lg-1 col-md-1 col-sm-1 centered bounce-in">
+                <i class="pe-7s-server"></i>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 fade-up">
+                <a class="" href="https://docs.google.com/document/d/15hmuJIHUQWwSwunXXq-C2MQk5fKWMG6MsqEGN4FGWo8/edit" target="_blank"> <h3>PHP</h3></a>
+                <p align="justify">Un langage de programmation libre, principalement utilisé pour produire des pages Web dynamiques via un serveur HTTP.</p>
+              </div>
+
+              <div class="col-lg-1 col-md-1 col-sm-1 centered bounce-in">
+                <i class="pe-7s-config"></i>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 fade-up">
+                <a class="" href="https://docs.google.com/document/d/11QeaLIxvMzsAAO5XYsJfP3HYWQCAQmpn/edit" target="_blank"> <h3>Base de données</h3></a>
+                <p align="justify">Les bases de données informatiques sont utilisées dans un grand nombre d'entreprises pour stocker, organiser et analyser les données.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-1 col-md-1 col-sm-1 centered bounce-in">
+                <i class="pe-7s-display1"></i>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 fade-up">
+                <h3>Java</h3>
+                <p align="justify">Java permet de faire tourner des applications écrits dans ce langage. La plateforme Java permet peut se soustraire du système d'exploitation, ce dernier faisant la liaison. Ainsi une même application Java peut tourner sur Windows ou Linux.</p>
+              </div>
+
+              <div class="col-lg-1 col-md-1 col-sm-1 centered bounce-in">
+                <i class="pe-7s-chat icon"></i>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 fade-up">
+                <h3>Développement de projet</h3>
+                <p align="justify">La gestion de projet ou management de projet est l'ensemble des activités visant à organiser le bon déroulement d’un projet et à en atteindre les objectifs.</p>
+              </div>
+
+              <div class="col-lg-1 col-md-1 col-sm-1 centered bounce-in">
+                <i class="fa fa-globe"></i>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 fade-up">
+                <h3>Réseaux</h3>
+                <p align="justify">Un réseau informatique est un ensemble d'équipements reliés entre eux pour échanger des informations.</p>
+              </div>
+            </div>
+          </div>
+          <!-- container -->
+        </section>
+
+        <section id="portfolio" class="white">
+          <div class="container">
+            <div class="gap"></div>
+            <div class="centered gap fade-down section-heading">
+              <h2 class="main-title">Portfolio</h2>
+              <hr>
+              <p>Entre les périodes de stages et le projet professionnel encadré, l'expérience a été très enrichissante</p>
+            </div>
+          <div class="row mt gap">
+            <div class="col-md-4 post fade-up">
+              <div class="item-inner">
+                <img src="build/img/demo/git.PNG" alt="" class="img-responsive">
+                <div class="post-meta">
+                  <span class="post-date">24</span>
+                  <p>Août</p>
+                  <p>2020</p>
+                </div>
+              </div>
+              <h3>
+                <a href="https://github.com/jpicard22" target="_blank">Mise en place de Git</a>
+              </h3>
+            </br>
+          </br>
+          <p align="justify">Afin de développer mes compétences en toute sécurité, l'utilisation de Git et GitHub a été très utile. L'installation de Git via gitBash a été une des premières pratiques réalisées pendant la formation.
+          </p>
+          <p>
+            <a class="btn btn-outlined btn-primary" href="https://docs.google.com/document/d/1i65fiS9MmBjB0kBqLmXHZX7PzM0-ehw-2lP8q2QqO-A/edit" target="_blank">Documentation</a>
+          </p>
+        </div>
+
+           
+              <div class="col-md-4 post fade-up">
+                <div class="item-inner">
+                  <img src="build/img/demo/bienvenueEnBretagne.png" alt="" class="img-responsive">
+                  <div class="overlay">
+                    <a class="preview btn btn-outlined btn-primary" href="https://hellobretagne.herokuapp.com/" target="_blank">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="post-meta">
+                    <span class="post-date">4</span>
+                    <p>Décembre</p>
+                    <p>2020</p>
+                    <!--<span class="post-comment"><i class="fa fa-comments"></i></span>-->
+                  </div>
+                </div>
+                <h3>
+                  <a href="https://hellobretagne.herokuapp.com/" target="_blank">Ma première expérience de développement sous symfony</a>
+                </h3>
+                <p align="justify">En stage dans la société Tekxia, il a fallu que je me familiarise avec le framework Symfony avant de pouvoir travailler sur les sites commerciaux de l'entreprise. Grâce au lien ci-dessous, j'ai réalisé un site internet de 2 pages sous Symfony et réalisé un mise en ligne via Heroku (service cloud permetant de déployer des sites intenet).</p>
+              </a>
+              <p>
+                <a class="btn btn-outlined btn-primary" href="https://www.youtube.com/channel/UCzuaB4F2znrMggxcwUuVhAw/videos" target="_blank">Documentation</a>
+              </p>
+            </div>
+
+            <div class="col-md-4 post fade-up">
+              <div class="item-inner">
+                <img src="build/img/demo/tekxia.PNG" alt="" class="img-responsive">
+                <div class="overlay">
+                  <a class="preview btn btn-outlined btn-primary" href="http://www.tekxia.com/" target="_blank">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+                <div class="post-meta">
+                  <span class="post-date">20</span>
+                  <p>Décembre</p>
+                  <p>2020</p>
+                </div>
+              </div>
+              <h3>
+                <a href="http://www.tekxia.com/" target="_blank">Mise à jour des sites commerciaux de la société Tekxia</a>
+              </h3>
+              <p align="justify">Plusieurs modifications ont été nécessaires pour que le site soit plus ergonomique. Chaque modification a été réalisée sous Symfony et donc il a fallu s'adapter à la traduction avec translate et à doctrine (ORM = Object Relational Mapper) qui est un logiciel libre qui par defaut sous Symfony permettant la connexion à la base de données.
+              </p>
+              <p>
+                <a class="btn btn-outlined btn-primary" href="https://docs.google.com/document/d/1g-3Gta9cmhkjgSAW--5zb9cJUCQByk9n/edit" target="_blank">Documentation</a>
+              </p>
+            </div>
+
+            <div class="col-md-4 post fade-up">
+              <div class="item-inner">
+                <img src="build/img/demo/PPE3.PNG" alt="" class="img-responsive">
+                <div class="post-meta">
+                  <span class="post-date">20</span>
+                  <p>Avril</p>
+                  <p>2021</p>
+                </div>
+              </div>
+              <h3>
+                <a href="{{ 'D:/wampserver/www/travail/PPE/siteWebPHP/pouzyBook/'|file_link(0) }}">Projet de groupe sur une application Java et sur un site web</a>
+              </h3>
+              <p align="justify">Réalisation de A à Z avec avant tout la conception d'un cahier des charges (voir documentation) pour ensuite réaliser une application web (client léger) ainsi qu'une application sous JAVA (client lourd). Projet très interessant permettant de comprendre le besoin d'un client et de se former aux bases du développpement.
+              </p>
+              <p>
+                <a class="btn btn-outlined btn-primary" href="https://drive.google.com/drive/folders/1SAYAcr5d_9ZACYYDHQMBpRNSiaR_RLlX" target="_blank">Documentation</a>
+              </p>
+            </div>
+
+            <div class="col-md-4 post fade-up">
+              <div class="item-inner">
+                <img src="build/img/demo/PPE3.PNG" alt="" class="img-responsive">
+                <div class="post-meta">
+                  <span class="post-date">15</span>
+                  <p>Février</p>
+                  <p>2021</p>
+                </div>
+              </div>
+              <h3>
+                <a href="https://127.0.0.1:8001/" target="_blank">Projet en parallèle sur le framework Symfony pour le site web de la bibliothèque en ligne</a>
+              </h3>
+              <p align="justify">Afin de développer mes compétences pendant la période de stage, j'ai décidé de réaliser le site web de la bibliothèque avec Symfony. J'ai donc découvert comment fonctionnait les rôles avec les users et l'administrateur ainsi que les formulaires de connections en travaillant avec Symfony Form.
+              </p>
+              <p>
+                <a class="btn btn-outlined btn-primary" href="https://docs.google.com/document/d/1g-3Gta9cmhkjgSAW--5zb9cJUCQByk9n/edit" target="_blank">Documentation</a>
+              </p>
+            </div>
+
+    
+
+        <div class="col-md-4 post fade-up">
+          <div class="item-inner">
+            <img src="build/img/demo/sophro.PNG" alt="" class="img-responsive">
+            <div class="post-meta">
+              <span class="post-date">10</span>
+              <p>Mars</p>
+              <p>2021</p>
+            </div>
+          </div>
+          <h3>
+            <a href="" target="_blank">Projet d'un site web pour une sophrologue en cours
+            </a>
+          </h3>
+        </br>
+        <p align="justify">C'est un travail sur WordPress que je terminerai après avoir passé les examens.
+        </p>
+        <p>
+          <a class="btn btn-outlined btn-primary" href="" target="_blank">EN COURS</a>
+        </p>
+      </div>
+      <!-- row -->
+    </section>
+
+    <!-- BLOG POSTS -->
+    <!--/#blog-filter-->
+    <section id="testimonials" class="divider-wrapper">
+      <div class="container">
+        <div class="row mt">
+          <div class="centered gap fade-down section-heading">
+            <h2 class="main-title">
+              <a href="https://docs.google.com/document/d/1KsSjnUjghuSoYAGqZ5PmFOrg-_s5GXo_/edit" target="_blank">Veille technologique
+              </a>
+            </h2>
+            <hr>
+            <p>Un bon développeur se doit de s'informer de façon systématique sur les techniques les plus récentes et surtout sur leur mise à disposition commerciale
+            </p>
+          </div>
+        </div>
+
+        <!-- row -->
+
+      </div>
+      <!-- container -->
+    </section>
+    <div class="container post-list gap">
+      <div class="row gap">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12 post fade-up">
+              <div class="row">
+                <div class="col-md-12">
+                  <h3>
+                    <a href="https://www.sololearn.com/home" target="_blank" class="post-title">sololearn</a>
+                  </h3>
+                </div>
+              </div>
+              <div class="row post-content">
+                <div class="col-md-3">
+                  <div class="item-inner">
+                    <img src="build/img/demo/sololearn.png" alt="" class="img-responsive">
+                    <div class="overlay">
+                      <a class="preview btn btn-outlined btn-primary" href="https://www.sololearn.com/home" target="_blank">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <p align="justify">
+                    Cours gratuits permettant d'apprendre les bases du développement avec plusieurs languages.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 post fade-up">
+              <div class="row">
+                <div class="col-md-12">
+                  <h3>
+                    <a href="https://kinsta.com/fr/blog/meilleur-langage-programmation-apprendre/" target="_blank" class="post-title">Kinsta.com</a>
+                  </h3>
+                </div>
+              </div>
+              <div class="row post-content">
+                <div class="col-md-3">
+                  <div class="item-inner">
+                    <img src="build/img/demo/kinsta.jpg" alt="" class="img-responsive">
+                    <div class="overlay">
+                      <a class="preview btn btn-outlined btn-primary" href="https://kinsta.com/fr/blog/meilleur-langage-programmation-apprendre/" target="_blank">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <p align="justify">
+                    Quel est le meilleur langage de programmation à apprendre ? Il y a beaucoup de choix à faire, ce qui rend difficile de savoir par où commencer.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div></br>
+          <div class="row">
+            <div class="col-md-12 post fade-up">
+              <div class="row">
+                <div class="col-md-12">
+                  <h3>
+                    <a href="https://zestedesavoir.com/articles/3689/sortie-de-php-8/" target="_blank" class="post-title">Sortie de PHP 8</a>
+                  </h3>
+                </div>
+              </div>
+              <div class="row post-content">
+                <div class="col-md-3">
+                  <div class="item-inner">
+                    <img src="build/img/demo/php8.PNG" alt="" class="img-responsive">
+                    <div class="overlay">
+                      <a class="preview btn btn-outlined btn-primary" href="https://zestedesavoir.com/articles/3689/sortie-de-php-8/" target="_blank">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <p align="justify">
+                    Tous les ans, les développeurs de PHP travaillent d’arrache pied pour nous sortir une nouvelle version de PHP en fin d’année. Et à chaque fois c’est beaucoup de nouvelles fonctionnalités très intéressantes qui sont intégrées au langage. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12 post fade-up">
+              <div class="row">
+                <div class="col-md-12">
+                  <h3>
+                    <a href="" target="_blank" class="post-title">BABEL</a>
+                  </h3>
+                </div>
+              </div>
+              <div class="row post-content">
+                <div class="col-md-3">
+                  <div class="item-inner">
+                    <img src="build/img/demo/babel.png" alt="" class="img-responsive">
+                    <div class="overlay">
+                      <a class="preview btn btn-outlined btn-primary" href="https://fr.babbel.com/" target="_blank">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <p align="justify">
+                    Babbel est un système d’apprentissage des langues en ligne. Il propose un site web ainsi qu’une application pour téléphones intelligents et tablettes destinés à l'apprentissage payant des langues.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 post fade-up">
+              <div class="row">
+                <div class="col-md-12">
+                  <h3>
+                    <a href="https://www.lesnumeriques.com/ordinateur-portable/framework-devoile-un-pc-portable-de-13-5-pouces-evolutif-et-reparable-n160919.html" target="_blank" class="post-title">Framework dévoile un PC portable évolutif et réparable</a>
+                  </h3>
+                </div>
+              </div>
+              <div class="row post-content">
+                <div class="col-md-3">
+                  <div class="item-inner">
+                    <img src="build/img/demo/framework.PNG" alt="" class="img-responsive">
+                    <div class="overlay">
+                      <a class="preview btn btn-outlined btn-primary" href="https://www.lesnumeriques.com/ordinateur-portable/framework-devoile-un-pc-portable-de-13-5-pouces-evolutif-et-reparable-n160919.html" target="_blank">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <p align="justify">
+                    Avec son PC portable, Framework s'adresse aux clients soucieux de l’évolutivité de leur PC et propose une alternative aux marques qui ont fait le choix de l’esthétique et du tout soudé.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 post fade-up">
+              <div class="row">
+                <div class="col-md-12">
+                  <h3>
+                    <a href="https://www.01net.com/actualites/l-informatique-quantique-des-promesses-incroyables-mais-difficiles-a-tenir-2035451.html" target="_blank" target="_blank" class="post-title">L'informatique quantique</a>
+                  </h3>
+                </div>
+              </div>
+              <div class="row post-content">
+                <div class="col-md-3">
+                  <div class="item-inner">
+                    <img src="build/img/demo/infoQuantique.jpg" alt="" class="img-responsive">
+                    <div class="overlay">
+                      <a class="preview btn btn-outlined btn-primary" href="https://www.01net.com/actualites/l-informatique-quantique-des-promesses-incroyables-mais-difficiles-a-tenir-2035451.html" target="_blank">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <p align="justify">
+                  En théorie, le calcul quantique peut apporter des accélérations exponentielles dans la résolution de certains problèmes fondamentaux. Malheureusement, ces cas d’usage sont, pour l’instant, inatteignables dans la réalité.
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="stats" class="divider-wrapper">
+      <div class="container">
+
+        <div class="row">
+          <div class="centered gap fade-down section-heading">
+            <h2 class="main-title">Stats pour le Fun</h2>
+            <hr>
+            <p>Depuis, ma vie a un peu changé...</p>
+          </div>
+        </div>
+        <!-- row -->
+
+        <div class="row gap">
+          <div class="col-md-3 col-xs-12">
+            <div class="centered bounce-in">
+              <span class="stat-icon">
+                <span class="pe-7s-timer bounce-in no-display animated bounceIn appear"></span></span>
+              <h5>
+                <span class="countup">1000</span></h5>
+              <h6>HEURES DE COURS</h6>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12">
+            <div class="centered bounce-in">
+              <span class="stat-icon">
+                <span class="pe-7s-note bounce-in no-display animated bounceIn appear"></span></span>
+              <h5>
+                <span class="countup">350</span></h5>
+              <h6>HEURES DE STAGE</h6>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12">
+            <div class="centered bounce-in">
+              <span class="stat-icon">
+                <span class="pe-7s-light bounce-in no-display animated bounceIn appear"></span></span>
+              <h5>
+                <span class="countup">500</span></h5>
+              <h6>HEURES DE TRAVAIL PERSONNEL</h6>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12">
+            <div class="centered bounce-in">
+              <span class="stat-icon">
+                <span class="pe-7s-user bounce-in no-display animated bounceIn appear"></span></span>
+              <h5>
+                <span class="countup">1</span></h5>
+              <h6>BINOME</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+<!-- CLIENTS LOGOS -->
+<div class="grey">
+<div class="container">
+
+<div class="row">
+<div class="centered gap fade-down section-heading">
+<h2 class="main-title">Remerciements</h2>
+<hr>
+<p>Je tiens à remercier toutes les personnes qui ont contribuées à ma reconversion et qui m'ont donné de précieux conseils. Votre soutien ainsi que vos recommandations ont renforcé ma motivation pour devenir développeur.</p>
+</div>
+</div>
+<!-- row -->
+
+<div class="row centered">
+<div id="logo-carousel" class="fade-up">
+<div class="item">
+<img src="build/img/logo/Catalys.PNG" alt="">Catalys
+</div>
+<div class="item">
+<img src="build/img/logo/greta.PNG" alt="">Toute l'équipe enseignante du
+</br>Greta Est Bretagne
+</div>
+<div class="item">
+<img src="build/img/logo/famille.png" alt="">Ma Famille
+</div>
+<div class="item">
+<img src="build/img/logo/Tekxia.PNG" alt="">Monsieur Menon de la société
+</br>
+Tekxia
+</div>
+<div class="item">
+<img src="build/img/logo/garage.png" alt="">Garage des Landes Fleuries
+</div>
+</div>
+</div>
+<!-- row -->
+</div>
+<!-- container -->
+</div>
+<!-- dg -->
+
+<!--<div class="container"> <div class="row gap mt"> <div class="centered gap fade-down section-heading"> <h2 class="main-title">Pricing Tables</h2> <hr> <p>She evil face fine calm have now. Separate screened he outweigh of distance landlord.</p> </div> </div>-->
+<!-- row -->
+
+<!--<div class="row gap flat"> <div class="col-lg-3 col-md-3 col-xs-12"> <ul class="plan plan1 flip-in"> <li class="plan-name"> Basic </li> <li class="plan-price"> <strong>£19</strong> / month </li> <li> <strong>5GB</strong> Storage </li> <li> <strong>1GB</strong> RAM </li> <li> <strong>400GB</strong> Bandwidth </li> <li> <strong>10</strong> Email Address </li> <li> <strong>Forum</strong> Support </li> <li class="plan-action"> <a href="#" class="btn btn-outlined btn-primary btn-lg">Signup</a> </li> </ul> </div> <div class="col-lg-3 col-md-3 col-xs-12"> <ul class="plan plan2 featured flip-in"> <li class="plan-name"> Standard </li> <li class="plan-price"> <strong>£39</strong> / month </li> <li> <strong>5GB</strong> Storage </li> <li> <strong>1GB</strong> RAM </li> <li> <strong>400GB</strong> Bandwidth </li> <li> <strong>10</strong> Email Address </li> <li> <strong>Forum</strong> Support </li> <li class="plan-action"> <a href="#" class="btn btn-outlined btn-primary btn-lg">Signup</a> </li> </ul> </div> <div class="col-lg-3 col-md-3 col-xs-12"> <ul class="plan plan3 flip-in"> <li class="plan-name"> Advanced </li> <li class="plan-price"> <strong>£199</strong> / month </li> <li> <strong>50GB</strong> Storage </li> <li> <strong>8GB</strong> RAM </li> <li> <strong>1024GB</strong> Bandwidth </li> <li> <strong>Unlimited</strong> Email Address </li> <li> <strong>Forum</strong> Support </li> <li class="plan-action"> <a href="#" class="btn btn-outlined btn-primary btn-lg">Signup</a> </li> </ul> </div> <div class="col-lg-3 col-md-3 col-xs-12"> <ul class="plan plan4 flip-in"> <li class="plan-name"> Deluxe </li> <li class="plan-price"> <strong>£999</strong> / month </li> <li> <strong>50GB</strong> Storage </li> <li> <strong>8GB</strong> RAM </li> <li> <strong>1024GB</strong> Bandwidth </li> <li> <strong>Unlimited</strong> Email Address </li> <li> <strong>Forum</strong> Support </li> <li class="plan-action"> <a href="#" class="btn btn-outlined btn-primary btn-lg">Signup</a> </li> </ul> </div> </div> </div>-->
+
+<!-- CALL TO ACTION -->
+<div id="call">
+<div class="container">
+<div class="row fade-up">
+<h3></h3>
+<div class="col-lg-8 col-lg-offset-2">
+<!--<p>Danger nearer length oppose really add now either. But ask regret eat branch fat garden. Become am he except wishes. Past so at door we walk want such sang. Feeling colonel get her garrets own.</p> <p> <button type="button" class="btn btn-outlined btn-primary btn-lg bounce-in">Call To Action Button</button> </p>-->
+</div>
+</div>
+<!-- row -->
+</div>
+<!-- container -->
+</div>
+<!-- Call to action -->
+
+<div class="container" id="contact-us">
+<div class="row mt">
+<div class="centered gap fade-down section-heading">
+<h2 class="main-title">Pour me contacter</h2>
+<hr>
+
+</div>
+</div>
+<!-- row -->
+</div>
+<!-- container -->
+
+<div class="container">
+<div class="row gap">
+ 
+
+</div>
+</div>
+</div>
+
+<!--<div class="fade-up col-md-6 fade-up"> <div id="message"></div> <form method="post" action="sendemail.php" id="contactform"> <p><input type="text" class="form-control" name="name" id="name" placeholder="Name" /></p> <p><input type="text" class="form-control" name="email" id="email" placeholder="Email" /></p> <p><input type="text" class="form-control" name="website" id="website" placeholder="Website" /></p> <p><textarea name="comments" class="form-control" id="comments" placeholder="Comments"></textarea></p> <input class="btn btn-outlined btn-primary" type="submit" name="submit" value="Submit" /> </form> </div>-->
+</div>
+<!-- row -->
+</div></div><!-- MAIN FOOTER --><div id="footerwrap">
+<div class="container">
+<div class="row">
+<div class="col-lg-4">
+<h4 class="widget-title"></h4>
+<ul class="tag-widget">
+<li>
+<a class="btn btn-primary btn-outlined" href="#">Mentions légales</a>
+</li>
+<li>
+<a class="btn btn-primary btn-outlined" href="#">CGV</a>
+</li>
+
+<!--<li><p>&nbsp | &nbsp </p></li>-->
+
+</ul>
+</div>
+<!--col-lg-4-->
+
+<!--col-lg-4-->
+<div class="col-lg-4">
+<h4 class="widget-title">Informations</h4>
+<p>Quévert<br/>
+
+E:
+<a href="mailto:#">jeromepicard@jeromepicard.fr</a>
+</p>
+</div>
+<!--col-lg-4-->
+</div>
+<!-- row -->
+</div>
+<!-- container -->
+<div id="footer-copyright">
+<div class="col-lg-4"></a>
+</p></div> </div></div><a id="gototop" class="gototop no-display" href="#"> <i class="fa fa-angle-up"></i></a><!-- END MAIN FOOTER --></body></html>
+
+{% block javascripts %}
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/axentix@1.0.0/dist/js/axentix.min.js"></script>
+      <script src="build/js/jquery.js"></script>
+      <script src="build/js/modernizr.custom.js"></script>
+      <script src="build/js/init.js"></script>
+
+      //<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      //<!--[if lt IE 9]> //<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> //<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script> //<![endif]-->
+
+      <script type="text/javascript">
+        $(document).ready(function () {
+          jQuery('#headerwrap').backstretch([
+            "build/img/bg/bg1.jpg", "build/img/bg/bg2.jpg", "build/img/bg/bg3.png"
+          ], {
+            duration: 7000,
+            fade: 700
+          });
+
+          // Map Position And Settings
+          $("#mapwrapper").gMap({
+            controls: false,
+            scrollwheel: false,
+            markers: [
+              {
+                latitude: 40.7566,
+                longitude: -73.9863,
+                icon: {
+                  image: "build/img/marker.png",
+                  iconsize: [
+                    44, 44
+                  ],
+                  iconanchor: [
+                    12, 46
+                  ],
+                  infowindowanchor: [12, 0]
+                }
+              }
+            ],
+            icon: {
+              image: "build/img/marker.png",
+              iconsize: [
+                26, 46
+              ],
+              iconanchor: [
+                12, 46
+              ],
+              infowindowanchor: [12, 0]
+            },
+            latitude: 40.7566,
+            longitude: -73.9863,
+            zoom: 14
+          });
+        });
+      </script>
+
+      <script src="build/js/bootstrap.min.js"></script>
+      <script src="build/js/plugins.js"></script>
+      <script src="build/js/imagesloaded.js"></script>
+      <script src="build/js/prettyPhoto.js"></script>
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
+      <script src="build/js/init.js"></script>
+
+      <!-- Bootstrap core JavaScript ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="build/js/bootstrap.min.js"></script>
+      <script src="build/js/plugins.js"></script>
+      <script src="build/js/imagesloaded.js"></script>
+      <script src="build/js/prettyPhoto.js"></script>
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
+      <script src="build/js/init.js"></script>
+
+    {% endblock %}
+
+</body>
+</html>
